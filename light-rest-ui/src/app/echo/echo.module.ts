@@ -4,17 +4,15 @@ import { EchoComponent } from './echo.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-const routes:Routes=[
+const routes: Routes = [
 	{
-		path:'',
-		component:EchoComponent
+		path: '',
+		component: EchoComponent
 	}
-]
+];
 
 @NgModule({
-  declarations: [
-    EchoComponent
-  ],
-  imports: [CommonModule,RouterModule.forChild(routes),FormsModule]
+	declarations: [EchoComponent],
+	imports: [CommonModule, RouterModule.forChild(routes), FormsModule]
 })
-export class EchoModule { }
+export class EchoModule {}
