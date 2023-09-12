@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { EchoService } from './echo.service';
 import { CreateEchoDto } from './dto/create-echo.dto';
 import { UpdateEchoDto } from './dto/update-echo.dto';
@@ -8,8 +16,8 @@ export class EchoController {
   constructor(private readonly echoService: EchoService) {}
 
   @Post()
-  create(@Body() newWord:CreateEchoDto) {
-    return this.echoService.create(newWord.word)
+  create(@Body() newWord: CreateEchoDto) {
+    return this.echoService.create(newWord);
   }
 
   @Get()

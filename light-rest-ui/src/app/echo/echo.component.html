@@ -1,26 +1,17 @@
 <div>
-  <h1>agregar un dato nuevo</h1>
-  <input [(ngModel)]="dato" type="text" placeholder="Agrega cualquier dato">
-  <button (click)="aniadir()">agregar</button>
-
+	<h1>agregar un dato nuevo</h1>
+	<input [(ngModel)]="dato" type="text" placeholder="Agrega cualquier dato" />
+	<button (click)="aniadir()">agregar</button>
 </div>
-<!-- <div>
-  <h5>Listado de Datos</h5>
-  <ul>
-    <li *ngFor="let item of dataList">
-      {{ item.name }} - <a (click)="selectedItem(item)">Editar</a> - <a (click)="deleteData()">Eliminar</a>
-    </li>
-  </ul>
+<div>
+	<h5>Listado de Datos</h5>
+	<ul>
+		<li *ngFor="let item of dataList">{{ item.word }} - <button (click)="onDeleteDate(item)">Eliminar</button></li>
+	</ul>
 
-  <h5>Agregar Nuevo Dato</h5>
-  <div>
-    <input [(ngModel)]="newItem.name" placeholder="Nombre">
-    <button (click)="addData()">Agregar</button>
-  </div>
-
-  <h5>Editar Dato</h5>
-  <div *ngIf="selectedItem.id">
-    <input [(ngModel)]="selectedItem.name" placeholder="Nombre">
-    <button (click)="updateData()">Actualizar</button>
-  </div>
-</div> -->
+	<!-- <h5>Editar Dato</h5>
+	<div *ngIf="selectedItem.id">
+		<input [(ngModel)]="selectedItem.name" placeholder="Nombre" />
+		<button (click)="updateData()">Actualizar</button>
+	</div> -->
+</div>

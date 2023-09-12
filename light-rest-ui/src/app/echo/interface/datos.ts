@@ -1,3 +1,4 @@
-export interface Datos{
-    word:string;
+export interface Datos {
+	id?: string;
+	word: string;
 }
